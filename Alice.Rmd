@@ -1,0 +1,43 @@
+---
+title: "Relat?rio de Consultoria Alice - Sensoriamento Remoto"
+author: "Lab. Estat?tica - Turma C"
+date: "16 de setembro de 2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+***
+## Objetivo
+
+Analisar se h? rela??o entre os casos de leptospirose notificados pelo SUS e a ocorr?ncia de precipita??es em bacias hidrogr?ficas.
+
+### Objetivos Secund?rio:
+
+Avaliar a rela??o entre o n?mero de casos de leptospirose com o perfil s?cio econ?mico.
+
+
+
+### Plano de Trabalho
+
+
+A partir da distribui??o espacial dos munic?pios com casos confirmados de leptospirose foi proposto uma forma de an?lise que contemplasse parte desses munic?pios utilizando como unidade territorial a bacia hidrogr?fica a qual ele est? inserido. Uma vez que as bacias hidrogr?ficas permitem uma vis?o conjunta do comportamento das condi??es naturais ?s atividades humanas nelas desenvolvidas, acredita-se que a precipita??o incidente nessas unidades territoriais possam exercer uma influ?ncia nos casos de leptospirose nesses mun?cipios. 
+
+Para escolha das bacias hidrogr?ficas foram considerados os munic?pios que tinham casos de leptospirose e que tiveram pelo menos uma ocorr?ncia de inunda??o registrados pelo Sistema Integrado de Informa??es sobre Desastres - S2ID43 entre janeiro de 2013 e dezembro de 2017.
+
+![Bacias Hidrogr?ficas selecionadas](C:\Users\celso\Dropbox\Lab1\Lab_1_Alice\bacia.jpg)
+
+
+
+### Metodologia de An?lise Estat?stica Proposta
+
+Prop?e-se inicialmente uma an?lise descritiva das vari?veis de interesse, N?mero de Casos e Precipita??o, nas bacias hidrogr?ficas em quest?o. Tamb?m ser? proposto a estratifica??o da vari?vel N?mero de Casos nas vari?veis que descrevem o perfil s?cio econ?mio, com a finalidade de buscar evidencias de correla??es. 
+
+
+Para a investigar a rela??o entre N?mero de casos e Precipita??o, sugere-se uma modelagem por Modelos Lineares Generalizados. Pois segundo a pesquisa realizda at? o momento o dados n?o se aderem a ditribui??o normal. Dessa forma, proposmos investigar a distribui??o que melhor se adere aos dados e apresentar um modelo de estimativa de m?dia por MLG.
+
+
